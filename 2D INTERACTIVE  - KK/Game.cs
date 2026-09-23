@@ -72,15 +72,31 @@ namespace MohawkGame2D
 
             //black flag
             Draw.SetFillColor(0, 0, 0);
-            Draw.Rectangle(70, 90, 50, 30);
+            Draw.Rectangle(60, 90, 60, 40);
+
+            //skull
+            Draw.SetFillColor(Color.White);
+            Draw.Circle(85, 105, 10);
+            Draw.Rectangle(80, 110, 10, 10);
+            Draw.SetFillColor(Color.Black);
+            Draw.Circle(90, 105, 3);
+            Draw.Circle(80, 105, 3);
+            //Draw.Triangle(70, 110, 71, 115, 73, 110);
+
 
             //mizzen sail
             Draw.SetFillColor(250, 233, 210);
-            Draw.Capsule(110, 140, 60, 140, 60);
-            Draw.SetFillColor(70, 196, 250);
-            Draw.Capsule(10, 140, 40, 140, 70);
+            Draw.Triangle(110, 70, 160, 150, 110, 180);
 
-           
+            
+
+            
+                
+            
+
+
+
+
         }
     }
 
