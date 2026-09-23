@@ -70,29 +70,42 @@ namespace MohawkGame2D
             Draw.SetFillColor(71, 43, 23);
             Draw.Rectangle(110, 70, 10, 190);
 
-            //black flag
-            Draw.SetFillColor(0, 0, 0);
-            Draw.Rectangle(60, 90, 60, 40);
 
-            //skull
-            Draw.SetFillColor(Color.White);
-            Draw.Circle(85, 105, 10);
-            Draw.Rectangle(80, 110, 10, 10);
-            Draw.SetFillColor(Color.Black);
-            Draw.Circle(90, 105, 3);
-            Draw.Circle(80, 105, 3);
-            //Draw.Triangle(70, 110, 71, 115, 73, 110);
+            if (Input.IsMouseButtonDown(MouseButton.Left) && Input.GetMouseY() >70 && Input.GetMouseY() < 200)
+            {
+                //black flag
+                Draw.SetFillColor(0, 0, 0);
+                Draw.Rectangle(60, Input.GetMouseY(), 60, 40);
+                //skull
+                Draw.SetFillColor(Color.White);
+                Draw.Circle(85, Input.GetMouseY()+20, 10);
+                Draw.Rectangle(80, Input.GetMouseY()+25, 10, 10);
+                Draw.SetFillColor(Color.Black);
+                Draw.Circle(90, Input.GetMouseY()+20, 3);
+                Draw.Circle(80, Input.GetMouseY()+20, 3);
 
+                //maybe fix
+                //Draw.Triangle(70, 110, 71, 115, 73, 110);
+
+            }
+
+            else
+            {
+                //black flag
+                Draw.SetFillColor(0, 0, 0);
+                Draw.Rectangle(60, 90, 60, 40);
+                //skull
+                Draw.SetFillColor(Color.White);
+                Draw.Circle(85, 105, 10);
+                Draw.Rectangle(80, 110, 10, 10);
+                Draw.SetFillColor(Color.Black);
+                Draw.Circle(90, 105, 3);
+                Draw.Circle(80, 105, 3);
+            }
 
             //mizzen sail
             Draw.SetFillColor(250, 233, 210);
             Draw.Triangle(110, 70, 160, 150, 110, 180);
-
-            
-
-            
-                
-            
 
 
 
