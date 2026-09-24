@@ -78,11 +78,11 @@ namespace MohawkGame2D
                 Draw.Rectangle(60, Input.GetMouseY(), 60, 40);
                 //skull
                 Draw.SetFillColor(Color.White);
-                Draw.Circle(85, Input.GetMouseY()+20, 10);
-                Draw.Rectangle(80, Input.GetMouseY()+25, 10, 10);
+                Draw.Circle(85, Input.GetMouseY()+15, 10);
+                Draw.Rectangle(80, Input.GetMouseY()+20, 10, 10);
                 Draw.SetFillColor(Color.Black);
-                Draw.Circle(90, Input.GetMouseY()+20, 3);
-                Draw.Circle(80, Input.GetMouseY()+20, 3);
+                Draw.Circle(90, Input.GetMouseY()+15, 3);
+                Draw.Circle(80, Input.GetMouseY()+15, 3);
 
                 //maybe fix
                 //Draw.Triangle(70, 110, 71, 115, 73, 110);
