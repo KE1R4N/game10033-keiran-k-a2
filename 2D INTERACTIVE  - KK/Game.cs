@@ -84,8 +84,8 @@ namespace MohawkGame2D
                 Draw.Circle(90, Input.GetMouseY()+15, 3);
                 Draw.Circle(80, Input.GetMouseY()+15, 3);
 
-                //maybe fix
-                //Draw.Triangle(70, 110, 71, 115, 73, 110);
+                //Maybe fix later, skull nose. Fudging numbers is taking eons
+                //Draw.Triangle(83, Input.GetMouseY()+40, 85, Input.GetMouseY()+40, 87, Input.GetMouseY()+40);
 
             }
 
@@ -101,6 +101,7 @@ namespace MohawkGame2D
                 Draw.SetFillColor(Color.Black);
                 Draw.Circle(90, 105, 3);
                 Draw.Circle(80, 105, 3);
+                //Draw.Triangle(83, 112, 85, 110, 87, 112);
             }
 
             //mizzen sail
